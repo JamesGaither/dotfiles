@@ -1,6 +1,9 @@
 set number
 set tabstop=4
 set spell
+" Auto wrap text
+set wrap
+
 colorscheme slate
 
 hi clear SpellBad                                                
