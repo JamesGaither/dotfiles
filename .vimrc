@@ -1,6 +1,7 @@
 " Plugins
 call plug#begin()
 Plug 'vim-python/python-syntax'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 
