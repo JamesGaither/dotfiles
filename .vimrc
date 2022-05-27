@@ -20,21 +20,19 @@ hi SpellCap cterm=underline
 hi clear SpellLocal
 hi SpellLocal cterm=underline
 
+" Default settings
+set ts=2
+set sts=2
+set sw=2
+set expandtab
+
 " Python things
-" python highlight does not work here. Need to TS
 let g:python_highlight_all=1
-au Filetype python set
+autocmd Filetype python set
 	\ tabstop=4
 	\ softtabstop=4
 	\ shiftwidth=4
 	\ textwidth=79
 	\ expandtab
 	\ autoindent
-
-
-" Web Dev
-" au BufNewFile,BufRead *.js, *.html, *.css
-"    \ set tabstop=2
-"    \ set softtabstop=2
-"    \ set shiftwidth=2
 
