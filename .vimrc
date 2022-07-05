@@ -9,6 +9,7 @@ call plug#end()
 set number
 set spell
 set wrap
+set hlsearch
 syntax on
 colorscheme slate
 
