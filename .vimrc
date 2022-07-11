@@ -37,4 +37,5 @@ autocmd Filetype python set
 	\ textwidth=79
 	\ expandtab
 	\ autoindent
+  \ colorcolumn=80
 
