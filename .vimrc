@@ -3,6 +3,7 @@ call plug#begin()
 Plug 'vim-python/python-syntax'
 Plug 'preservim/nerdtree'
 Plug 'nvie/vim-flake8'
+Plug 'vmchale/dhall-vim'
 call plug#end()
 
 
