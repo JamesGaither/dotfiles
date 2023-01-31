@@ -21,3 +21,5 @@ eval "$(pyenv virtualenv-init -)"
 export PATH="/home/jgaither/.local/bin:$PATH"
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree $HOME'
 
+# Make nim accesible
+export PATH="/home/jgaither/.nimble/bin:$PATH"
