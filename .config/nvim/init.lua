@@ -96,6 +96,7 @@ vim.api.nvim_create_autocmd('BufWritePost', {
 -- Bring in other setting files
 require('keymap')
 require('options')
+require('filetype')
 -- Keymaps for better default experience
 -- See `:help vim.keymap.set()`
 
