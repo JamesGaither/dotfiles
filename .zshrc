@@ -14,6 +14,11 @@ source ~/.zsh/themes/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Allow history
+HISTFILE=~/.zsh_history
+export HISTSIZE=10000
+export SAVEHIST=10000
+
 # 
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init --path)"
