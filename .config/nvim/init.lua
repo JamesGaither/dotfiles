@@ -61,6 +61,7 @@ require('packer').startup(function(use)
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make', cond = vim.fn.executable 'make' == 1 }
 
   use 'alaviss/nim.nvim'
+  use 'sainnhe/gruvbox-material'
   -- Add custom plugins to packer from ~/.config/nvim/lua/custom/plugins.lua
   local has_plugins, plugins = pcall(require, 'custom.plugins')
   if has_plugins then
@@ -116,7 +117,7 @@ vim.o.breakindent = true
 vim.o.undofile = true
 
 
--- vim.o.spell = true
+vim.o.spell = true
 
 -- Case insensitive searching UNLESS /C or capital in search
 vim.o.ignorecase = true
@@ -128,11 +129,10 @@ vim.wo.signcolumn = 'yes'
 
 -- Set colorscheme
 vim.o.termguicolors = true
-vim.cmd [[colorscheme onedark]]
+vim.cmd [[colorscheme gruvbox-material]]
 vim.o.colorcolumn = '80'
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
-
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
 vim.api.nvim_create_autocmd('TextYankPost', {
   callback = function()
@@ -147,7 +147,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 require('lualine').setup {
   options = {
     icons_enabled = false,
-    theme = 'onedark',
+    theme = 'auto',
     component_separators = '|',
     section_separators = '',
   },
