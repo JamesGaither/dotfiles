@@ -7,9 +7,14 @@ local keymap = vim.keymap
 keymap.set("n", "<leader>pv", vim.cmd.Ex)
 keymap.set("n", "<C-d>", "<C-d>zz")
 keymap.set("n", "<C-u>", "<C-u>zz")
+keymap.set("n", "n", "nzzzv")
+keymap.set("n", "N", "Nzzzv")
 keymap.set("i", "jk", "<ESC>")
 
-
+-- yank to system clipboard with leader y
+keymap.set("n", "<leader>y", "\"+y")
+keymap.set("v", "<leader>y", "\"+y")
+keymap.set("n", "<leader>Y", "\"+Y")
 
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 

@@ -146,11 +146,18 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 -- See `:help lualine.txt`
 require('lualine').setup {
   options = {
-    icons_enabled = false,
+    icons_enabled = true,
     theme = 'auto',
     component_separators = '|',
     section_separators = '',
   },
+  sections = {
+    lualine_a = {
+      {
+        'buffers'
+      }
+    }
+  }
 }
 
 -- Enable Comment.nvim

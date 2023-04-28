@@ -18,7 +18,7 @@
 [[ ! -o 'sh_glob'         ]] || p10k_config_opts+=('sh_glob')
 [[ ! -o 'no_brace_expand' ]] || p10k_config_opts+=('no_brace_expand')
 'builtin' 'setopt' 'no_aliases' 'no_sh_glob' 'brace_expand'
-
+POWERLEVEL9K_NIX_SHELL_INFER_FROM_PATH=true
 () {
   emulate -L zsh -o extended_glob
 
