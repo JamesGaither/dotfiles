@@ -8,13 +8,13 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    dotfiles = {
-      url = "github:jamesgaither/dotfiles";
-      flake = false;
-    };
+    #dotfiles = {
+    #  url = "github:jamesgaither/dotfiles";
+    #  flake = false;
+    #};
   };
 
-  outputs = { nixpkgs, home-manager, dotfiles, ... }:
+  outputs = { nixpkgs, home-manager, ... }: # dotfiles,
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -29,7 +29,7 @@
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix
         extraSpecialArgs = {
-          inherit dotfiles;
+          #inherit dotfiles;
         };
       };
     };

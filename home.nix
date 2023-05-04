@@ -1,4 +1,4 @@
-{ config, pkgs, dotfiles, ... }:
+{ config, pkgs, ... }: #dotfiles
 
 {
   # Home Manager needs a bit of information about you and the paths it should
