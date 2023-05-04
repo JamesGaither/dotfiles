@@ -1,8 +1,9 @@
 { config, pkgs, ... }: #dotfiles
 
 {
-  # Home Manager needs a bit of information about you and the paths it should
-  # manage.
+  imports = [
+    ./dotfiles/tmux.conf
+  ];
   home = {
     username = "jgaither";
     homeDirectory = "/home/$jgaither";
