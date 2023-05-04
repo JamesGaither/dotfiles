@@ -51,10 +51,10 @@
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
-    ".zshrc".source = "config/.zshrc";
+    ".zshrc".source = config/.zshrc;
   };
   xdg.configFile = {
-    nvim.source = "config/.config/nvim";
+    nvim.source = config/.config/nvim;
   };
 
   # You can also manage environment variables but you will have to manually
