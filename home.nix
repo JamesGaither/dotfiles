@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./config/tmux.conf
+    ./config/tmux.nix
   ];
   home = {
     username = "jgaither";
