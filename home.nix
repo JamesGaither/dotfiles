@@ -55,7 +55,7 @@
     # '';
     ".zshrc".source = config/.zshrc;
     ".p10k.zsh".source = config/.p10k.zsh;
-    ".tmux.conf".source = config/.tmux.conf;
+    #".tmux.conf".source = config/.tmux.conf;
     ".zsh".source = config/.zsh;
   };
   xdg.configFile = {
