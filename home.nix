@@ -19,6 +19,7 @@
     packages = with pkgs; [
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
+      gcc
       hello
       neovim
       tmux
@@ -54,7 +55,7 @@
     ".zshrc".source = config/.zshrc;
     ".p10k.zsh".source = config/.p10k.zsh;
     ".tmux.conf".source = config/.tmux.conf;
-    ".zsh".source = config/zsh;
+    ".zsh".source = config/.zsh;
   };
   xdg.configFile = {
     nvim.source = config/.config/nvim;
