@@ -52,6 +52,9 @@
     #   org.gradle.daemon.idletimeout=3600000
     # '';
     ".zshrc".source = config/.zshrc;
+    ".p10k.zsh".source = config/.p10k.zsh;
+    ".tmux.conf".source = config/.tmux.conf;
+    ".zsh".source = config/zsh;
   };
   xdg.configFile = {
     nvim.source = config/.config/nvim;
