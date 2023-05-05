@@ -44,7 +44,11 @@
     ".zshrc".source = config/.zshrc;
     ".p10k.zsh".source = config/.p10k.zsh;
     #".tmux.conf".source = config/.tmux.conf;
-    ".zsh".source = config/.zsh;
+    ".zsh" = {
+      source = config/.zsh;
+      recursive = true;
+    };
+
   };
   xdg.configFile = {
     nvim.source = config/.config/nvim;
