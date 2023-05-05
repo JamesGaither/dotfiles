@@ -46,7 +46,6 @@
     #".tmux.conf".source = config/.tmux.conf;
     ".zsh" = {
       source = config/.zsh;
-      recursive = true;
     };
 
   };
