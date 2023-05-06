@@ -19,7 +19,7 @@
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
     in {
-      homeConfigurations."jgaither" = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations.jgaither = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
         # Specify your home configuration modules here, for example,
