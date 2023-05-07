@@ -20,6 +20,7 @@
       gcc
       hello
       neovim
+      vim
       tmux
       git
       meslo-lgs-nf
@@ -43,14 +44,11 @@
     #".zshrc".source = config/.zshrc;
     ".p10k.zsh".source = config/.p10k.zsh;
     #".tmux.conf".source = config/.tmux.conf;
-    #".zsh/aliases.zsh" = {
-    #  recursive = true;
-    #  source = config/.zsh/aliases.zsh;
-    #};
-
+    ".vimrc".source = config/.vimrc;
   };
   xdg.configFile = {
     nvim.source = config/.config/nvim;
+    pypoetry.source = config/.config/pypoetry;
   };
 
   # You can also manage environment variables but you will have to manually

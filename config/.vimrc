@@ -1,11 +1,11 @@
-" Plugins
-call plug#begin()
-Plug 'vim-python/python-syntax'
-Plug 'preservim/nerdtree'
-Plug 'nvie/vim-flake8'
-Plug 'vmchale/dhall-vim'
-Plug 'rust-lang/rust.vim'
-call plug#end()
+" Plugins. Turn on if using a plugin manager
+"call plug#begin()
+"Plug 'vim-python/python-syntax'
+"Plug 'preservim/nerdtree'
+"Plug 'nvie/vim-flake8'
+"Plug 'vmchale/dhall-vim'
+"Plug 'rust-lang/rust.vim'
+"call plug#end()
 
 
 set number
