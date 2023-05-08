@@ -7,5 +7,5 @@ This repo is a WIP moving from traditional dotfile management over to nix home-m
 2. install nix via a multi-user install: `sh <(curl -L https://nixos.org/nix/install) --daemon`
 3. clone this repo 
 4. symlink the flake.nix, flake.lock, and the home.nix to `/home/${USER}/.config/home-manager`. #TODO: Find an easier way to handle this.
-4. run `nix run .#homeConfigurations.jgaither.activationPackage --flake .` to install and activate home-manager. #TODO: Is this the only way to handle it? This needs more testing.
+5. run `nix run home-manager/master --switch` to install and activate home-manager.
 
