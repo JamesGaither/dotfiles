@@ -4,6 +4,7 @@
   imports = [
     ./config/tmux.nix
     ./config/zsh.nix
+    ./config/neovim.nix
   ];
   home = {
     username = "jgaither";
@@ -19,7 +20,6 @@
     packages = with pkgs; [
       gcc
       hello
-      neovim
       vim
       tmux
       git
