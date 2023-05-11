@@ -19,12 +19,11 @@
     # release notes.
     packages = with pkgs; [
       gcc
-      hello
       vim
       tmux
       git
       meslo-lgs-nf
-      zsh
+      ripgrep
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -47,7 +46,7 @@
     ".vimrc".source = config/.vimrc;
   };
   xdg.configFile = {
-    nvim.source = config/.config/nvim;
+    #nvim.source = config/.config/nvim;
     pypoetry.source = config/.config/pypoetry;
   };
 
