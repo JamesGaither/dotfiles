@@ -18,7 +18,7 @@
       undotree
     ];
     extraConfig = ''
-      :luafile .config/nvim/init.lua
+      :luafile .config/nvim/lua/init.lua
     '';
    };
 }

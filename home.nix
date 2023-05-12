@@ -4,7 +4,7 @@
   imports = [
     ./config/tmux.nix
     ./config/zsh.nix
-    ./config/neovim.nix
+    ./config/nvim/neovim.nix
   ];
   home = {
     username = "jgaither";
@@ -46,7 +46,10 @@
     ".vimrc".source = config/.vimrc;
   };
   xdg.configFile = {
-    #nvim.source = config/.config/nvim;
+    nvim = {
+      source = config/nvim/lua;
+      recursive = true;
+    };
     pypoetry.source = config/.config/pypoetry;
   };
 
