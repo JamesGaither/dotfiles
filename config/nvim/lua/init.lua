@@ -9,6 +9,10 @@ vim.o.smartcase = true
 vim.o.updatetime = 250
 vim.wo.signcolumn = 'yes'
 vim.wo.relativenumber = true
+vim.o.tabstop = 2
+vim.o.shiftwidth = 2
+vim.o.expandtab = true
+vim.o.smartindent = true
 -- Set colorscheme
 vim.o.termguicolors = true
 vim.cmd[[colorscheme onenord]]
