@@ -26,7 +26,12 @@
             ./desktop.nix
           ];
         };
-
+       "server" = home-manager.lib.homeManagerConfiguration {
+         inherit pkgs;
+	 modules = [
+	   ./server.nix
+	 ];
+        };
       };
     };
 }
