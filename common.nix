@@ -24,7 +24,8 @@
       git
       meslo-lgs-nf
       ripgrep
-
+      python311 
+      poetry
     ];
     shellAliases = {
       g = "git";
