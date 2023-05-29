@@ -22,6 +22,7 @@
       vim
       tmux
       git
+      minicom
       meslo-lgs-nf
       ripgrep
       python311 
