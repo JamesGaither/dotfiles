@@ -26,6 +26,7 @@
       meslo-lgs-nf
       ripgrep
       python311 
+      python311Packages.pip
       poetry
     ];
     shellAliases = {
