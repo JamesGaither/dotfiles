@@ -88,7 +88,10 @@ require'nvim-treesitter.configs'.setup {
 -- [[Filetype Settings]]
 vim.filetype.add({
   filename = {
-    ['Jenkinsfile'] = 'groovy'
+    ['Jenkinsfile'] = 'groovy',
+  },
+  extension = {
+    ['jenkinsfile'] = 'groovy'
   }
 })
 -- The line beneath this is called `modeline`. See `:help modeline`
