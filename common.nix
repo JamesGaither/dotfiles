@@ -26,8 +26,7 @@
       meslo-lgs-nf
       ripgrep
       poetry
-      cargo
-      rustc
+      rustup
       #(python311.withPackages(ps: with ps; [ pytz numpy python-redmine]))
     ];
 
