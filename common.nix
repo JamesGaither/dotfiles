@@ -25,10 +25,12 @@
       minicom
       meslo-lgs-nf
       ripgrep
-      python311 
-      python311Packages.pip
       poetry
+      cargo
+      rustc
+      #(python311.withPackages(ps: with ps; [ pytz numpy python-redmine]))
     ];
+
     shellAliases = {
       g = "git";
     };
