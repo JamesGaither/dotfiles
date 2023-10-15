@@ -8,6 +8,7 @@
     packages = with pkgs; [
       via
       sqlitebrowser
+      vlc
     ];
   };
   # As already mentioned
