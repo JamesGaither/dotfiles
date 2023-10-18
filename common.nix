@@ -4,6 +4,7 @@
   imports = [
     ./config/tmux.nix
     ./config/zsh.nix
+    ./config/starship.nix
     ./config/nvim/neovim.nix
   ];
   home = {
@@ -59,8 +60,10 @@
   home.sessionVariables = {
     # EDITOR = "emacs";
   };
-
-  # Let Home Manager install and manage itself.
-  programs.home-manager.enable = true;
+  programs = {
+    # Let Home Manager install and manage itself.
+    home-manager.enable = true;
+    autojump.enable = true;
+  };
   fonts.fontconfig.enable = true;
 }

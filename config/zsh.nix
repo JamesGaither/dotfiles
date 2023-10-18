@@ -6,6 +6,7 @@
     history = {
       share = true;
     };
+    enableAutosuggestions = true;
     shellAliases = {
       grep = "grep --color=auto";
       ls = "ls --color=auto";
@@ -15,9 +16,9 @@
       hs = "history";
     };
 
-    initExtra = "
-      source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
-      source ~/.p10k.zsh
-    ";
+    #initExtra = "
+    #  source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
+    #  source ~/.p10k.zsh
+    #";
   };
 }
