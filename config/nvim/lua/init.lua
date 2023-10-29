@@ -14,8 +14,9 @@ vim.o.shiftwidth = 2
 vim.o.expandtab = true
 vim.o.smartindent = true
 -- Set colorscheme
+require('onenord').setup()
 vim.o.termguicolors = true
-vim.cmd[[colorscheme onenord]]
+
 vim.o.colorcolumn = '80'
 
 
@@ -24,37 +25,38 @@ vim.o.colorcolumn = '80'
 -- See `:help vim.keymap.set()`
 
 local km = vim.keymap
+local keyset = vim.keymap.set
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
-km.set("n", "<leader>pv", vim.cmd.Ex)
+keyset("n", "<leader>pv", vim.cmd.Ex)
 -- Move selection up and down with 'J' and 'K'
-km.set("v", "J", ":m '>+1<CR>gv=gv")
-km.set("v", "K", ":m '<-2<CR>gv=gv")
+keyset("v", "J", ":m '>+1<CR>gv=gv")
+keyset("v", "K", ":m '<-2<CR>gv=gv")
 
-km.set("n", "<C-d>", "<C-d>zz")
-km.set("n", "<C-u>", "<C-u>zz")
-km.set("n", "n", "nzzzv")
-km.set("n", "N", "Nzzzv")
-km.set("i", "jk", "<ESC>")
+keyset("n", "<C-d>", "<C-d>zz")
+keyset("n", "<C-u>", "<C-u>zz")
+keyset("n", "n", "nzzzv")
+keyset("n", "N", "Nzzzv")
+keyset("i", "jk", "<ESC>")
 
 -- yank to system clipboard with leader y
-km.set("n", "<leader>y", "\"+y")
-km.set("v", "<leader>y", "\"+y")
-km.set("n", "<leader>Y", "\"+Y")
+keyset("n", "<leader>y", "\"+y")
+keyset("v", "<leader>y", "\"+y")
+keyset("n", "<leader>Y", "\"+Y")
 
 -- undotree remaps
-km.set("n", "<leader>u", vim.cmd.UndotreeToggle)
+keyset("n", "<leader>u", vim.cmd.UndotreeToggle)
 -- Telescope remaps
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>?', builtin.oldfiles, { desc = '[?] Find recently opened files' })
-vim.keymap.set('n', '<leader><space>', builtin.buffers, { desc = '[ ] Find existing buffers' })
---vim.keymap.set('n', '<leader>/', function()
-vim.keymap.set('n', '<C-p>', builtin.git_files, {})
-vim.keymap.set('n', '<leader>sf', builtin.find_files, { desc = '[S]earch [F]iles' })
-vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
-vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
-vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
-vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
+keyset('n', '<leader>?', builtin.oldfiles, { desc = '[?] Find recently opened files' })
+keyset('n', '<leader><space>', builtin.buffers, { desc = '[ ] Find existing buffers' })
+--keyset('n', '<leader>/', function()
+keyset('n', '<C-p>', builtin.git_files, {})
+keyset('n', '<leader>sf', builtin.find_files, { desc = '[S]earch [F]iles' })
+keyset('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
+keyset('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
+keyset('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
+keyset('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
 
 
 -- Plugin Configurations --
