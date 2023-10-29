@@ -20,18 +20,18 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in {
       homeConfigurations = {
-       "desktop" = home-manager.lib.homeManagerConfiguration {
+        "desktop" = home-manager.lib.homeManagerConfiguration {
+           inherit pkgs;
+           modules = [ 
+             ./desktop.nix
+           ];
+         };
+        "server" = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-          modules = [ 
-            ./desktop.nix
-          ];
-        };
-       "server" = home-manager.lib.homeManagerConfiguration {
-         inherit pkgs;
-	 modules = [
-	   ./server.nix
-	 ];
-        };
+          modules = [
+           ./server.nix
+	      ];
       };
     };
+  };
 }

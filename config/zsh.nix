@@ -1,12 +1,14 @@
 { pkgs, ...}:
 
 {
+  
   programs.zsh = {
     enable = true;
     history = {
       share = true;
     };
     enableAutosuggestions = true;
+    
     shellAliases = {
       grep = "grep --color=auto";
       ls = "ls --color=auto";
@@ -14,6 +16,20 @@
       l = "ll";
       history = "history 1"; # Show all history
       hs = "history";
+      
+      # SSH aliases
+      achilles = "ssh achilles";
+      aether = "ssh aether";
+      anemoi = "ssh anemoi";
+      apollo = "ssh apollo";
+      atlas = "ssh atlas";
+      fb1 = "ssh fastbox1";
+      fb2 = "ssh fastbox2";
+      red-server = "ssh red";
+      hermes = "ssh hermes";
+      metis = "ssh 10.21.5.20";
+
+
     };
   };
 }
