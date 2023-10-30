@@ -19,7 +19,7 @@
       
       # SSH aliases
       achilles = "ssh achilles";
-      aether = "ssh aether";
+      aether = "ssh 10.21.5.30";
       anemoi = "ssh anemoi";
       apollo = "ssh apollo";
       atlas = "ssh atlas";
