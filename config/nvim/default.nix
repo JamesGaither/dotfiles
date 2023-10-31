@@ -5,9 +5,9 @@
     enable = true;
     viAlias = true;
     vimAlias = true;
-    coc.enable = true;
     extraPackages = with pkgs; [
       tree-sitter
+      pyright
     ];
     plugins = with pkgs.vimPlugins; [
       nvim-treesitter.withAllGrammars
@@ -16,11 +16,19 @@
       onenord-nvim
       gitsigns-nvim
       undotree
-      coc-rust-analyzer
-      coc-python
+      nvim-lspconfig
+      nvim-cmp
+      cmp-nvim-lsp
+      cmp-buffer
+      cmp-path
+      luasnip
     ];
     extraConfig = ''
-      :luafile .config/nvim/lua/init.lua
+      :luafile ~/.config/nvim/lua/init.lua
     '';
-   };
+  };
+  xdg.configFile.nvim = {
+    source = ./config;
+    recursive = true;
+  };
 }

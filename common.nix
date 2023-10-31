@@ -5,7 +5,7 @@
     ./config/tmux.nix
     ./config/zsh.nix
     ./config/starship.nix
-    ./config/nvim/neovim.nix
+    ./config/nvim
   ];
   home = {
     username = "jgaither";
@@ -31,18 +31,8 @@
       #(python311.withPackages(ps: with ps; [ pytz numpy python-redmine]))
     ];
 
-    shellAliases = {
-      g = "git";
-    };
-  };
-  home.file = {
-    ".vimrc".source = config/.vimrc;
   };
   xdg.configFile = {
-    nvim = {
-      source = config/nvim/lua;
-      recursive = true;
-    };
     pypoetry.source = config/.config/pypoetry;
   };
 
