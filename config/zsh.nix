@@ -26,6 +26,7 @@
       fb1 = "ssh fastbox1";
       fb2 = "ssh fastbox2";
       reds = "ssh red";
+      rocketman = "ssh rocketman";
       hermes = "ssh hermes";
       metis = "ssh 10.21.5.20";
 
