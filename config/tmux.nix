@@ -18,6 +18,7 @@
         bind -r l select-pane -R
         # Make tmux use the correct colorscheme for neovim
         set-option -sa terminal-overrides ",xterm*:Tc"
+        set-option -g set-clipboard on
       '';
     };
   };

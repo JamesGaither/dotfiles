@@ -29,6 +29,7 @@
       rocketman = "ssh rocketman";
       hermes = "ssh hermes";
       metis = "ssh 10.21.5.20";
+      zeus = "ssh zeus";
 
 
     };
