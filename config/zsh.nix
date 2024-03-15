@@ -30,8 +30,13 @@
       hermes = "ssh hermes";
       metis = "ssh 10.21.5.20";
       zeus = "ssh zeus";
-
-
     };
+    initExtra = ''
+      export PYENV_ROOT="$HOME/.pyenv"
+      if [[ -d $PYENV_ROOT/bin ]]; then
+        export PATH="$PYENV_ROOT/bin:$PATH"
+        eval "$(pyenv init -)" 
+      fi
+    '';
   };
 }
