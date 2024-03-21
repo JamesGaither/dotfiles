@@ -19,7 +19,6 @@
     # want to update the value, then make sure to first check the Home Manager
     # release notes.
     packages = with pkgs; [
-      gcc
       vim
       tmux
       git
