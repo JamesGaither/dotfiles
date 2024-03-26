@@ -25,14 +25,14 @@
       minicom
       meslo-lgs-nf
       ripgrep
-      poetry
       rustup
+      fzf
       #(python311.withPackages(ps: with ps; [ pytz numpy python-redmine]))
     ];
 
   };
   xdg.configFile = {
-    pypoetry.source = config/.config/pypoetry;
+    #pypoetry.source = config/.config/pypoetry;
   };
 
   # You can also manage environment variables but you will have to manually
