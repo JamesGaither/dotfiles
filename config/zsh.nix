@@ -6,6 +6,7 @@
     enable = true;
     history = {
       share = true;
+      extended = true;
     };
     autosuggestion.enable = true;
     
@@ -14,12 +15,11 @@
       ls = "ls --color=auto";
       ll = "ls -alF";
       l = "ll";
-      history = "history 1"; # Show all history
+      history = "history -f 1"; # Show all history
       hs = "history";
       
       # SSH aliases
       achilles = "ssh achilles";
-      aether = "ssh 10.21.5.30";
       anemoi = "ssh anemoi";
       apollo = "ssh apollo";
       atlas = "ssh atlas";
@@ -28,7 +28,7 @@
       reds = "ssh red";
       rocketman = "ssh rocketman";
       hermes = "ssh hermes";
-      metis = "ssh 10.21.5.20";
+      metis = "ssh 172.16.20.20";
       zeus = "ssh zeus";
     };
     initExtra = ''
