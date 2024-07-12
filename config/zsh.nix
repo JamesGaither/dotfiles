@@ -7,7 +7,7 @@
     history = {
       share = true;
     };
-    enableAutosuggestions = true;
+    autosuggestion.enable = true;
     
     shellAliases = {
       grep = "grep --color=auto";
