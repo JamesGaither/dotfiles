@@ -23,6 +23,7 @@
       cmp-buffer
       cmp-path
       luasnip
+      vim-tmux-navigator
     ];
     extraConfig = ''
       :luafile ~/.config/nvim/lua/init.lua

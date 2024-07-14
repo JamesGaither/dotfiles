@@ -10,6 +10,7 @@
       baseIndex = 1;
       plugins = with pkgs; [
         tmuxPlugins.resurrect
+        tmuxPlugins.vim-tmux-navigator
       ];
       extraConfig = ''
         bind -r k select-pane -U

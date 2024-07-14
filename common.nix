@@ -50,7 +50,11 @@
   programs = {
     # Let Home Manager install and manage itself.
     home-manager.enable = true;
-    autojump.enable = true;
+    zoxide = {
+      enable = true;
+      enableBashIntegration = true;
+      enableZshIntegration = true;
+    };
     fzf = {
       enable = true;
       enableZshIntegration = true;
