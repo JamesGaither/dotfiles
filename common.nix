@@ -26,7 +26,6 @@
       meslo-lgs-nf
       ripgrep
       rustup
-      fzf
       #(python311.withPackages(ps: with ps; [ pytz numpy python-redmine]))
     ];
 
@@ -52,6 +51,11 @@
     # Let Home Manager install and manage itself.
     home-manager.enable = true;
     autojump.enable = true;
+    fzf = {
+      enable = true;
+      enableZshIntegration = true;
+      enableBashIntegration = true;
+    };
   };
   fonts.fontconfig.enable = true;
 }
