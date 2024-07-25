@@ -54,6 +54,9 @@
       enable = true;
       enableBashIntegration = true;
       enableZshIntegration = true;
+      options = [
+        "--cmd j"
+      ];
     };
     fzf = {
       enable = true;
