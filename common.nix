@@ -26,6 +26,7 @@
       meslo-lgs-nf
       ripgrep
       rustup
+      poetry
       #(python311.withPackages(ps: with ps; [ pytz numpy python-redmine]))
     ];
 
@@ -50,6 +51,7 @@
   programs = {
     # Let Home Manager install and manage itself.
     home-manager.enable = true;
+    #poetry.enable = true;
     zoxide = {
       enable = true;
       enableBashIntegration = true;
@@ -58,6 +60,7 @@
         "--cmd j"
       ];
     };
+    pyenv.enable = true;
     fzf = {
       enable = true;
       enableZshIntegration = true;
