@@ -9,7 +9,7 @@
     [ 
       (modulesPath + "/profiles/qemu-guest.nix")
       ./configuration.nix
-      ./users.nix
+      ../users/jgaither.nix
     ];
 
   boot.initrd.availableKernelModules = [ "ahci" "xhci_pci" "virtio_pci" "sr_mod" "virtio_blk" ];

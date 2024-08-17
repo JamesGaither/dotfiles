@@ -10,16 +10,35 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }:
+  outputs = { self, nixpkgs, home-manager }@inputs:
     let
       lib = nixpkgs.lib;
       system = "x86_64-linux";
+      specialArgs = inputs;
+      #shared-modules = [
+      #  home-manager.nixosModules.home-manager
+      #  {  
+      #     home-manager = {
+      #     useUserPackages = true;
+      #      extraSpecialArgs = specialArgs;
+      #    };
+      #  }
+      #];
       pkgs = nixpkgs.legacyPackages.${system};
     in {
     nixosConfigurations = {
       nixos1 = lib.nixosSystem {
         inherit system;
-        modules = [ ./nixos/nix1.nix ];
+        modules = [ 
+          ./hosts/nix1.nix 
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.jgaither = import ./server.nix;
+          }
+        ]; 
+
       };
     };
 

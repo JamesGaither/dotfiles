@@ -8,8 +8,9 @@
     ./config/nvim
   ];
   home = {
-    username = "jgaither";
-    homeDirectory = "/home/jgaither";
+    # In theory, username should not be needed? 
+    #username = "jgaither";
+    #homeDirectory = "/home/jgaither";
     stateVersion = "22.11";
     # This value determines the Home Manager release that your configuration is
     # compatible with. This helps avoid breakage when a new Home Manager release
@@ -44,10 +45,6 @@
   #
   #  /etc/profiles/per-user/jgaither/etc/profile.d/hm-session-vars.sh
   #
-  # if you don't want to manage your shell through Home Manager.
-  home.sessionVariables = {
-    # EDITOR = "emacs";
-  };
   programs = {
     # Let Home Manager install and manage itself.
     home-manager.enable = true;
