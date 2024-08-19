@@ -8,3 +8,7 @@
     packages = with pkgs; [];
   };
 }
+home = {
+  username = "jgaither";
+  homeDirectory = "/home/jgaither";
+};

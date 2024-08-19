@@ -2,15 +2,15 @@
 
 {
   imports = [
-    ./config/tmux.nix
-    ./config/zsh.nix
-    ./config/starship.nix
-    ./config/nvim
+    ./modules/home-manager/tmux.nix
+    ./modules/home-manager/zsh.nix
+    ./modules/home-manager/starship.nix
+    ./modules/home-manager/nvim
   ];
   home = {
     # In theory, username should not be needed? 
-    #username = "jgaither";
-    #homeDirectory = "/home/jgaither";
+    username = "jgaither";
+    homeDirectory = "/home/jgaither";
     stateVersion = "22.11";
     # This value determines the Home Manager release that your configuration is
     # compatible with. This helps avoid breakage when a new Home Manager release

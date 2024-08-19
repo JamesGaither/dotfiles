@@ -45,7 +45,10 @@
     homeConfigurations = {
       jgaither = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        modules = [ ./server.nix ];
+        modules = [ 
+          ./common.nix 
+          #./users/jgaither.nix
+        ];
       };
     };
     };
