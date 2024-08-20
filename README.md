@@ -1,8 +1,8 @@
 # James' Dotfiles
 A repo for tracking my dotfiles. 
-This repo is a WIP moving from traditional dotfile management over to nix home-manager managed.
+Now including my (very) WIP NixOS configs
 
-## Installation guide
+## Installation guide (for non-nixos distros)
 1. Install curl and apt via your package manager i.e. `sudo apt install curl git`
 2. install nix via a multi-user install: `sh <(curl -L https://nixos.org/nix/install) --daemon`
 3. clone this repo 

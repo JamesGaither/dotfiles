@@ -2,14 +2,15 @@
 
 {
   imports = [
-    ./common.nix
-    ./HomeManagerModules/firefox.nix
+    ../../common.nix
+    ../../HomeManagerModules/firefox.nix
   ];
   home = {
     packages = with pkgs; [
       via
       sqlitebrowser
       vlc
+      libreoffice-qt
     ];
   };
   # As already mentioned

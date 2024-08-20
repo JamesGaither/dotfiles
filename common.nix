@@ -2,10 +2,10 @@
 
 {
   imports = [
-    ./modules/home-manager/tmux.nix
-    ./modules/home-manager/zsh.nix
-    ./modules/home-manager/starship.nix
-    ./modules/home-manager/nvim
+    ./HomeManagerModules/tmux.nix
+    ./HomeManagerModules/zsh.nix
+    ./HomeManagerModules/starship.nix
+    ./HomeManagerModules/nvim
   ];
   home = {
     # In theory, username should not be needed? 
