@@ -108,6 +108,7 @@
     vim
     obsidian
     gnomeExtensions.pop-shell
+    gcc # Needed for rust
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
