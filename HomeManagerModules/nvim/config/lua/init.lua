@@ -14,7 +14,6 @@ vim.o.tabstop = 2
 vim.o.shiftwidth = 2
 vim.o.expandtab = true
 vim.o.smartindent = true
-
 -- Set colorscheme
 require('onenord').setup()
 vim.o.termguicolors = true
