@@ -27,7 +27,7 @@
       nvim-autopairs
     ];
     extraConfig = ''
-      :luafile ~/.config/nvim/lua/init.lua
+      :luafile ~/.config/nvim/init.lua
     '';
   };
   xdg.configFile.nvim = {
