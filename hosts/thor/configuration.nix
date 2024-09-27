@@ -109,6 +109,7 @@
     obsidian
     gnomeExtensions.pop-shell
     gcc # Needed for rust
+    htop
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
