@@ -110,6 +110,7 @@
     gnomeExtensions.pop-shell
     gcc # Needed for rust
     htop
+    socat
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
