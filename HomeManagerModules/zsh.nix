@@ -37,6 +37,7 @@
         export PATH="$PYENV_ROOT/bin:$PATH"
         eval "$(pyenv init -)" 
       fi
+      export PATH=$PATH:~/bin
     '';
   };
 }
