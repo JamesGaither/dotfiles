@@ -64,6 +64,7 @@
       enableZshIntegration = true;
       enableBashIntegration = true;
     };
+  ripgrep.enable = true;
   };
   fonts.fontconfig.enable = true;
 }
