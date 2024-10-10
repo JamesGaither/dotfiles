@@ -29,6 +29,7 @@
       ripgrep
       rustup
       poetry
+      ansible
       #(python311.withPackages(ps: with ps; [ pytz numpy python-redmine]))
     ];
 
