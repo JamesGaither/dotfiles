@@ -30,6 +30,11 @@
       hermes = "ssh hermes";
       metis = "ssh 172.16.20.20";
       zeus = "ssh zeus";
+
+      # Git shortcuts
+      g = "git";
+      glo = "git log --oneline --decorate";
+
     };
     initExtra = ''
       export PYENV_ROOT="$HOME/.pyenv"
