@@ -29,6 +29,7 @@
       ripgrep
       rustup
       poetry
+      ansible
       #(python311.withPackages(ps: with ps; [ pytz numpy python-redmine]))
     ];
 
@@ -64,6 +65,7 @@
       enableZshIntegration = true;
       enableBashIntegration = true;
     };
+  ripgrep.enable = true;
   };
   fonts.fontconfig.enable = true;
 }
