@@ -51,15 +51,15 @@
   services.xserver.enable = true;
 
   # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  #services.xserver.displayManager.gdm.enable = true;
+  #services.xserver.desktopManager.gnome.enable = true;
 
   
   hardware.system76.enableAll = true;
   services.power-profiles-daemon.enable = false;
   # Enable cosmic-desktop alpha
-  #services.desktopManager.cosmic.enable = true;
-  #services.displayManager.cosmic-greeter.enable = true;
+  services.desktopManager.cosmic.enable = true;
+  services.displayManager.cosmic-greeter.enable = true;
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
@@ -116,6 +116,8 @@
     socat
     wget
     zola
+    python311
+    veracrypt
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
