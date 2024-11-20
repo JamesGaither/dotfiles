@@ -26,7 +26,6 @@
       git
       minicom
       meslo-lgs-nf
-      ripgrep
       rustup
       poetry
       ansible
