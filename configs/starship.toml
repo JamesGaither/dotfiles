@@ -1,0 +1,178 @@
+format = """
+$directory\
+[](fg:dir_bg_color bg:git_bg_color)\
+$git_branch\
+$git_status\
+[](fg:git_bg_color bg:code_bg_color)\
+$buf\
+$c\
+$elixir\
+$elm\
+$golang\
+$gradle\
+$haskell\
+$java\
+$julia\
+$nodejs\
+$nim\
+$nix_shell\
+$python\
+$rust\
+$scala\
+[](fg:code_bg_color bg:tool_bg_color)\
+$kubernetes\
+$container\
+$docker_context\
+[](fg:tool_bg_color bg:character_bg_color)\
+$cmd_duration\
+\
+\n$character
+
+
+"""
+palette = "frost"
+#format = """
+#[](bg:#769ff0 fg:#a3aed2)\
+#$directory\
+#[](fg:#769ff0 bg:#394260)\
+#$git_branch\
+#$git_status\
+#[](fg:#394260 bg:#212736)\
+#$nodejs\
+#$rust\
+#$golang\
+#$php\
+#[](fg:#212736 bg:#1d2230)\
+#[ ](fg:#1d2230)\
+#\n$character"""
+
+# Nord Frost
+[palettes.frost]
+dir_bg_color = '#5E81AC'
+git_bg_color = '#81A1C1'
+code_bg_color = '#88C0D0'
+tool_bg_color = '#8FBCBB'
+text_color = '#2E3440'
+character_bg_color = '#D8DEE9'
+character_text_color = '#2E3440'
+character_text_error_color = '#BF616A' 
+
+[buf]
+symbol = "󰿘 "
+style = "bg:code_bg_color fg:text_color"
+format = '[ $symbol ($version) ]($style)'
+
+
+#[character]
+#success_symbol = "[](fg:character_bg_color bg:character_bg_color)[](fg:character_bg_color)"
+#error_symbol = "[](fg:character_bg_color bg:character_text_error_color)[](fg:character_text_error_color)"
+
+[cmd_duration]
+min_time = 0
+style = "bg:character_bg_color fg:character_text_color"
+format = '[ $duration ]($style)'
+
+#truncation_symbol = "…/"
+
+[directory]
+style = "bg:dir_bg_color fg:text_color"
+format = "[ $path $read_only ]($style)"
+home_symbol = "󰟒"
+truncation_length = 1
+truncation_symbol = "󰦩 "
+read_only = "󰌾 "
+fish_style_pwd_dir_length = 2
+
+[directory.substitutions]
+"/" = "  "
+
+[c]
+symbol = " "
+style = "bg:code_bg_color fg:text_color"
+format = '[ $symbol ($version) ]($style)'
+
+[docker_context]
+disabled = false
+symbol = " "
+style = "bg:tool_bg_color fg:text_color"
+format = '[ $symbol $context ]($style) $path'
+
+[kubernetes]
+symbol = "󱃾 "
+disabled = false
+format = '[ $symbol $cluster ]($style)'
+style = "bg:tool_bg_color fg:text_color"
+
+[elixir]
+symbol = " "
+style = "bg:code_bg_color fg:text_color"
+format = '[ $symbol ($version) ]($style)'
+
+[elm]
+symbol = " "
+style = "bg:code_bg_color fg:text_color"
+format = '[ $symbol ($version) ]($style)'
+
+[git_branch]
+symbol = "󰊢"
+style = "bg:git_bg_color fg:text_color"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "bg:git_bg_color fg:text_color"
+format = '[$all_status$ahead_behind ]($style)'
+
+[golang]
+symbol = " "
+style = "bg:code_bg_color fg:text_color"
+format = '[ $symbol ($version) ]($style)'
+
+[gradle]
+style = "bg:code_bg_color fg:text_color"
+format = '[ $symbol ($version) ]($style)'
+
+[haskell]
+symbol = " "
+style = "bg:code_bg_color fg:text_color"
+format = '[ $symbol ($version) ]($style)'
+
+[java]
+symbol = " "
+style = "bg:code_bg_color fg:text_color"
+format = '[ $symbol ($version) ]($style)'
+
+[julia]
+symbol = " "
+style = "bg:code_bg_color fg:text_color"
+format = '[ $symbol ($version) ]($style)'
+
+
+[python]
+symbol = " " 
+style = "bg:code_bg_color fg:text_color"
+format = '[ $symbol ($version) ]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:code_bg_color fg:text_color"
+format = '[ $symbol ($version) ]($style)'
+
+[nim]
+symbol = "󰆥 "
+style = "bg:code_bg_color fg:text_color"
+format = '[ $symbol ($version) ]($style)'
+
+[nix_shell]
+symbol = " "
+style = "bg:code_bg_color fg:text_color"
+format = '[ $symbol ($version) ]($style)'
+
+[rust]
+symbol = ""
+style = "bg:code_bg_color fg:text_color"
+format = '[ $symbol ($version) ]($style)'
+
+[scala]
+symbol = " "
+style = "bg:code_bg_color fg:text_color"
+format = '[ $symbol ($version) ]($style)'
