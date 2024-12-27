@@ -43,7 +43,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.jgaither = import ./server.nix;
+            home-manager.users.jgaither = import ./common.nix;
           }
         ]; 
 
