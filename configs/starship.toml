@@ -1,9 +1,10 @@
 format = """
 $directory\
-[](fg:dir_bg_color bg:git_bg_color)\
+[](fg:dir_bg_color bg:vcs_bg_color)\
 $git_branch\
 $git_status\
-[](fg:git_bg_color bg:code_bg_color)\
+$hg_branch\
+[](fg:vcs_bg_color bg:code_bg_color)\
 $buf\
 $c\
 $elixir\
@@ -49,7 +50,7 @@ palette = "frost"
 # Nord Frost
 [palettes.frost]
 dir_bg_color = '#5E81AC'
-git_bg_color = '#81A1C1'
+vcs_bg_color = '#81A1C1'
 code_bg_color = '#88C0D0'
 tool_bg_color = '#8FBCBB'
 text_color = '#2E3440'
@@ -115,11 +116,11 @@ format = '[ $symbol ($version) ]($style)'
 
 [git_branch]
 symbol = "󰊢"
-style = "bg:git_bg_color fg:text_color"
+style = "bg:vcs_bg_color fg:text_color"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:git_bg_color fg:text_color"
+style = "bg:vcs_bg_color fg:text_color"
 format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
@@ -146,6 +147,11 @@ symbol = " "
 style = "bg:code_bg_color fg:text_color"
 format = '[ $symbol ($version) ]($style)'
 
+[hg_branch]
+symbol = ""
+style = "bg:vcs_bg_color fg:text_color"
+format = '[ $symbol $branch ]($style)'
+disabled = false
 
 [python]
 symbol = " " 
