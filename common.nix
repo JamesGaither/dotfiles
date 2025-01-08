@@ -6,7 +6,6 @@
     ./HomeManagerModules/zsh.nix
     ./HomeManagerModules/starship.nix
     ./HomeManagerModules/nvim
-    ./HomeManagerModules/git.nix
   ];
   home = {
     # In theory, username should not be needed? 
