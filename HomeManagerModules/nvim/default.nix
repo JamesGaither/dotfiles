@@ -19,10 +19,7 @@
       gitsigns-nvim
       undotree
       nvim-lspconfig
-      nvim-cmp
-      cmp-nvim-lsp
-      cmp-buffer
-      cmp-path
+      blink-cmp
       luasnip
       vim-tmux-navigator
       nvim-autopairs
