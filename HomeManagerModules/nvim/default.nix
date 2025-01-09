@@ -9,6 +9,7 @@
     extraPackages = with pkgs; [
       tree-sitter
       pyright
+      lua-language-server
     ];
     plugins = with pkgs.vimPlugins; [
       nvim-treesitter.withAllGrammars
