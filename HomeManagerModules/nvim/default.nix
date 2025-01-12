@@ -23,6 +23,9 @@
       luasnip
       vim-tmux-navigator
       nvim-autopairs
+      oil-nvim
+      # Devicons required by oil
+      nvim-web-devicons
     ];
     extraConfig = ''
       :luafile ~/.config/nvim/init.lua

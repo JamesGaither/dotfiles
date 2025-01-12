@@ -41,7 +41,7 @@ keyset("n", "<C-u>", "<C-u>zz")
 keyset("n", "n", "nzzzv")
 keyset("n", "N", "Nzzzv")
 keyset("i", "jk", "<ESC>")
-
+keyset("n", "-", "<cmd>Oil<CR>")
 -- File Type Settings --
 -----------------------
 vim.filetype.add({
