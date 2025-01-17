@@ -28,6 +28,7 @@
       rustup
       poetry
       ansible
+      nixd
       #(python311.withPackages(ps: with ps; [ pytz numpy python-redmine]))
     ];
 

@@ -1,7 +1,7 @@
 -- LSP Magic --
 --------------------------
 local lspconfig = require'lspconfig'
-local servers = {'pyright', 'rust_analyzer', 'lua_ls'}
+local servers = {'pyright', 'rust_analyzer', 'lua_ls', 'nixd'}
 local capabilities = require('blink.cmp').get_lsp_capabilities()
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
