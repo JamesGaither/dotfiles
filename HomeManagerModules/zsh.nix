@@ -43,6 +43,7 @@
         eval "$(pyenv init -)" 
       fi
       export PATH=$PATH:~/bin:~/.cargo/bin
+      export PATH=$PATH:~/.local/bin/
     '';
   };
 }
