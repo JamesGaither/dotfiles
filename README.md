@@ -5,7 +5,7 @@ A repo for tracking my dotfiles and NixOS configs.
 1. Install curl and apt via your package manager i.e. `sudo apt install curl git`
 2. install nix via a multi-user install: `sh <(curl -L https://nixos.org/nix/install) --daemon`
 3. clone this repo 
-4. run `nix run home-manager/master -- switch --flake .#<profile>` to install and activate home-manager where profile is the profile you want (generally `{username}`.
+4. run `nix run home-manager -- switch --flake .#<profile>` to install and activate home-manager where profile is the profile you want (generally `{username}`. If you run it with a `.` instead of `.#<profile>`, it will use the username to determine the profile.
 5. You have to setup your user to use zsh (home-manager does not handle this). To do so, add your zsh path (e.g. `/home/${USER}/.nix-profile/bin/zsh`) to `/etc/shells`. Then active this profile as your default using `chsh` which will prompt you for the default shell.
 
 ## Notes
