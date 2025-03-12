@@ -10,6 +10,7 @@
       tree-sitter
       pyright
       lua-language-server
+      gopls
     ];
     plugins = with pkgs.vimPlugins; [
       nvim-treesitter.withAllGrammars
