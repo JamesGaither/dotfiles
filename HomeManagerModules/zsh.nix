@@ -44,6 +44,7 @@
       fi
       export PATH=$PATH:~/bin:~/.cargo/bin
       export PATH=$PATH:~/.local/bin/
+      export LIBVIRT_DEFAULT_URI="qemu:///system"
     '';
   };
 }
