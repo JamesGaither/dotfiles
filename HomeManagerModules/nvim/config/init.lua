@@ -18,7 +18,7 @@ vim.o.smartindent = true
 require('onenord').setup()
 vim.o.termguicolors = true
 vim.o.colorcolumn = '80'
-
+vim.o.clipboard = "unnamedplus"
 -- Keymaps --
 -------------
 keyset = vim.keymap.set

@@ -29,6 +29,8 @@
       poetry
       ansible
       nixd
+      xclip
+      xsel
       #(python311.withPackages(ps: with ps; [ pytz numpy python-redmine]))
     ];
 
