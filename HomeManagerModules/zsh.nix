@@ -20,10 +20,11 @@
       
       # Git shortcuts
       g = "git";
-      glo = "git log --oneline --decorate";
+      glog = "git log --oneline --graph --decorate --all";
 
     };
     initContent = ''
+      source ${./shell-functions.sh}
       export PYENV_ROOT="$HOME/.pyenv"
       if [[ -d $PYENV_ROOT/bin ]]; then
         export PATH="$PYENV_ROOT/bin:$PATH"
