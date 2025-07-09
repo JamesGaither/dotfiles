@@ -126,6 +126,7 @@ style = "bg:code_bg_color fg:text_color"
 format = '[ $symbol ($version) ]($style)'
 
 [hostname]
+ssh_only = false
 style = "bg:host_bg_color fg:text_color"
 format = "[ $hostname ]($style)" 
 
