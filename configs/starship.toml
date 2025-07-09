@@ -1,4 +1,6 @@
 format = """
+$hostname\
+[](fg:host_bg_color bg:dir_bg_color)\
 $directory\
 [](fg:dir_bg_color bg:vcs_bg_color)\
 $git_branch\
@@ -32,20 +34,6 @@ $cmd_duration\
 
 """
 palette = "frost"
-#format = """
-#[](bg:#769ff0 fg:#a3aed2)\
-#$directory\
-#[](fg:#769ff0 bg:#394260)\
-#$git_branch\
-#$git_status\
-#[](fg:#394260 bg:#212736)\
-#$nodejs\
-#$rust\
-#$golang\
-#$php\
-#[](fg:#212736 bg:#1d2230)\
-#[ ](fg:#1d2230)\
-#\n$character"""
 
 # Nord Frost
 [palettes.frost]
@@ -57,6 +45,7 @@ text_color = '#2E3440'
 character_bg_color = '#D8DEE9'
 character_text_color = '#2E3440'
 character_text_error_color = '#BF616A' 
+host_bg_color = '#4C566A'
 
 [buf]
 symbol = "󰿘 "
@@ -73,16 +62,15 @@ min_time = 0
 style = "bg:character_bg_color fg:character_text_color"
 format = '[ $duration ]($style)'
 
-#truncation_symbol = "…/"
-
 [directory]
 style = "bg:dir_bg_color fg:text_color"
 format = "[ $path $read_only ]($style)"
 home_symbol = "󰟒"
-truncation_length = 1
+# fish_style does not work if substitutions are on
+#fish_style_pwd_dir_length = 2
 truncation_symbol = "󰦩 "
 read_only = "󰌾 "
-fish_style_pwd_dir_length = 2
+#truncate_to_repo = false
 
 [directory.substitutions]
 "/" = "  "
@@ -136,6 +124,10 @@ format = '[ $symbol ($version) ]($style)'
 symbol = " "
 style = "bg:code_bg_color fg:text_color"
 format = '[ $symbol ($version) ]($style)'
+
+[hostname]
+style = "bg:host_bg_color fg:text_color"
+format = "[ $hostname ]($style)" 
 
 [java]
 symbol = " "

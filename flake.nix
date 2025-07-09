@@ -21,6 +21,10 @@
   outputs = { self, nixpkgs, home-manager, nixos-cosmic, ... }@inputs:
     let
       lib = nixpkgs.lib;
+      systems = {
+      	pi = "aarch64-linux";
+        other = "x86_64-linux";
+      };
       system = "x86_64-linux";
       specialArgs = inputs;
       #shared-modules = [
@@ -76,10 +80,25 @@
         inherit pkgs;
         extraSpecialArgs = { inherit inputs; };
         modules = [ 
+          {
+            home.username = "jgaither";
+            home.homeDirectory = "/home/jgaither";
+          }
           ./common.nix 
           #./users/jgaither.nix
         ];
       };
+      pi = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.${systems.pi};
+        extraSpecialArgs = { inherit inputs; };
+        modules = [ 
+          {
+            home.username = "pi";
+            home.homeDirectory = "/home/pi";
+          }
+          ./common.nix 
+        ];
+      };
     };
-    };
+  };
 }

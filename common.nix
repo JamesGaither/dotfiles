@@ -9,9 +9,6 @@
     ./HomeManagerModules/ssh.nix
   ];
   home = {
-    # In theory, username should not be needed? 
-    username = "jgaither";
-    homeDirectory = "/home/jgaither";
     stateVersion = "22.11";
     # This value determines the Home Manager release that your configuration is
     # compatible with. This helps avoid breakage when a new Home Manager release
