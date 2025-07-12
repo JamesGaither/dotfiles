@@ -50,28 +50,6 @@
             home-manager.users.jgaither = import ./common.nix;
           }
         ]; 
-
-      };
-      thor = lib.nixosSystem {
-        inherit system;
-        modules = [ 
-          {
-            nix.settings = {
-              substituters = [ "https://cosmic.cachix.org/" ];
-              trusted-public-keys = [ "cosmic.cachix.org-1:Dya9IyXD4xdBehWjrkPv6rtxpmMdRel02smYzA85dPE=" ];
-           };
-          }
-          nixos-cosmic.nixosModules.default
-          ./hosts/thor/configuration.nix 
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.extraSpecialArgs = { inherit inputs; };
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.jgaither = import ./hosts/thor/home.nix;
-          }
-        ]; 
-
       };
     };
 
@@ -86,6 +64,18 @@
           }
           ./common.nix 
           #./users/jgaither.nix
+        ];
+      };
+      thor = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+        extraSpecialArgs = { inherit inputs; };
+        modules = [ 
+          {
+            home.username = "jgaither";
+            home.homeDirectory = "/home/jgaither";
+          }
+          ./common.nix 
+          ./hosts/thor.nix
         ];
       };
       pi = home-manager.lib.homeManagerConfiguration {
