@@ -5,7 +5,7 @@
     tmux = {
       enable = true;
       mouse = true;
-      prefix = "C-a";
+      prefix = "M-s";
       keyMode = "vi";
       baseIndex = 1;
       plugins = with pkgs.tmuxPlugins; [
