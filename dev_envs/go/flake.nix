@@ -30,6 +30,7 @@
           packages = with pkgs; [
             go # The Go CLI
             gotools # Go tools like goimports, godoc, and others
+            zsh  # zsh just in case it not already installed
           ];
           shellHook = ''
             exec zsh
