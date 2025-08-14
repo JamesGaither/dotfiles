@@ -78,6 +78,18 @@
           ./hosts/thor.nix
         ];
       };
+      oden = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+        extraSpecialArgs = { inherit inputs; };
+        modules = [ 
+          {
+            home.username = "jgaither";
+            home.homeDirectory = "/home/jgaither";
+          }
+          ./common.nix 
+          ./hosts/oden.nix
+        ];
+      };
       pi = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${systems.pi};
         extraSpecialArgs = { inherit inputs; };
