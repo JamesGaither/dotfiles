@@ -17,6 +17,13 @@
       l = "ll";
       history = "history -f 1"; # Show all history
       hs = "history";
+
+      # Tmux shortcuts 
+      tm = "tmux";
+      tma = "tmux attach-session";
+      tmat = "tmux attach-session -t";
+      tml = "tmux list-session";
+      tmn = "tmux new-session";
       
       # Git shortcuts
       g = "git";
