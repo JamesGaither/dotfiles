@@ -15,6 +15,7 @@
     plugins = with pkgs.vimPlugins; [
       nvim-treesitter.withAllGrammars
       telescope-nvim
+      telescope-fzf-native-nvim
       plenary-nvim
       onenord-nvim
       gitsigns-nvim

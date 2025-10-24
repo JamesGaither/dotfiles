@@ -13,3 +13,5 @@ keyset('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord
 keyset('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
 keyset('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
 
+keyset('n', '<leader>ds', builtin.lsp_document_symbols, { desc = 'List LSP [D]ocument [S]ymbols' })
+keyset('n', '<leader>gd', builtin.lsp_definitions, { desc = '[G]o to [D]efinition of the word under the cursor' })

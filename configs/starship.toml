@@ -33,6 +33,7 @@ $cmd_duration\
 
 
 """
+command_timeout = 750
 palette = "frost"
 
 # Nord Frost

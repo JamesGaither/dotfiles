@@ -8,7 +8,7 @@ for _, lsp in ipairs(servers) do
   capabilities = capabilities,
   on_attach = function()
   keyset('n', 'K', vim.lsp.buf.hover, {buffer = 0})
-  keyset('n', 'gd', vim.lsp.buf.definition, {buffer = 0})
+  -- keyset('n', 'gd', vim.lsp.buf.definition, {buffer = 0})
   keyset('n', '<leader>df', vim.diagnostic.goto_next, {buffer = 0})
   keyset('n', '<leader>db', vim.diagnostic.goto_prev, {buffer = 0})
   end,

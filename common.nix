@@ -29,6 +29,7 @@
       nixd
       xclip
       xsel
+      go
       #(python311.withPackages(ps: with ps; [ pytz numpy python-redmine]))
     ];
 
