@@ -30,6 +30,7 @@
       glog = "git log --oneline --graph --decorate --all";
 
     };
+    completionInit = "autoload -U compinit && compinit -i";
     initContent = ''
       source ${./shell-functions.sh}
       export PYENV_ROOT="$HOME/.pyenv"
