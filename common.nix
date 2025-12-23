@@ -7,6 +7,7 @@
     ./HomeManagerModules/starship.nix
     ./HomeManagerModules/nvim
     ./HomeManagerModules/ssh.nix
+    ./HomeManagerModules/lazygit.nix
   ];
   home = {
     stateVersion = "22.11";
