@@ -3,7 +3,6 @@
 {
   imports = [
     ./common.nix
-    ./HomeManagerModules/firefox.nix
   ];
   home = {
     packages = with pkgs; [
