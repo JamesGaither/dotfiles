@@ -6,6 +6,9 @@
     viAlias = true;
     vimAlias = true;
     vimdiffAlias = true;
+    # The following 2 "with" statements preserve legacy values. Need to test if used.
+    withRuby = true;
+    withPython3 = true;
     extraPackages = with pkgs; [
       tree-sitter
       pyright
