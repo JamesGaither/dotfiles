@@ -31,6 +31,7 @@
       xclip
       xsel
       go
+      glow
       #(python311.withPackages(ps: with ps; [ pytz numpy python-redmine]))
     ];
 
