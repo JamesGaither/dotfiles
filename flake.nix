@@ -42,7 +42,7 @@
       nixos1 = lib.nixosSystem {
         inherit system;
         modules = [ 
-          ./hosts/nix1.nix 
+          ./hosts/nix1/nix1.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
