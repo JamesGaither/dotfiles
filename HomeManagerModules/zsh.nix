@@ -31,6 +31,9 @@
 
     };
     completionInit = "autoload -U compinit && compinit -i";
+    envExtra = ''
+      [[ -f ~/.zshenv.local ]] && source ~/.zshenv.local
+    '';
     initContent = ''
       source ${./shell-functions.sh}
       export PYENV_ROOT="$HOME/.pyenv"
