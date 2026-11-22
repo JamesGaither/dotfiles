@@ -32,6 +32,7 @@
       oil-nvim
       # Devicons required by oil
       nvim-web-devicons
+      render-markdown-nvim
     ];
     extraConfig = ''
       :luafile ~/.config/nvim/init.lua
